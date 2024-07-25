@@ -1,0 +1,20 @@
+.footer{
+    background-color: #272635;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    text-align: center;
+    gap:1.5rem;
+    font-size: 24px;
+    font-weight: 600;
+    color: #E8E9F3;
+}
+
+.openSource{
+    color: #E0A34C;
+}
+
+.openSource:hover{
+    color: #1F7396;
+}

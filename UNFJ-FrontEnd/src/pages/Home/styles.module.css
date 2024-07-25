@@ -1,0 +1,78 @@
+.homeContainer {
+    width: 96%;
+    height: 100%;
+}
+
+.firstSection {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/BGs/Section1BG.png');
+    background-size: cover;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.firstSectionTitle {
+    font-size: 32px;
+    font-weight: 800;
+    background-color: transparent;
+    text-shadow: 0 0 4px black;
+}
+
+.firstSectionBtn {
+    background-color: #1F7396;
+    padding: 0.8rem 1.8rem 0.8rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    color: #E8E9F3;
+    font-weight: 700;
+}
+
+.secondSection {
+    margin-top: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+
+.cardsContainer {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+}
+
+.secondSectionTitle {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.secondSectionCard {
+    width: 30%;
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.secondSectionCard > h1 {
+    font-size: 24px;
+}

@@ -4,13 +4,14 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "Lexend", sans-serif;
-  background-color: #E8E9F3;
   font-size: 18px;
+  top: 1rem;
 }
 
 body {
-  width: 100vw;
+  width: 98.7vw;
   height: 100vh;
+  background-color: #E8E9F3;
 }
 
 #root {
