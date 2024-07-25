@@ -2,26 +2,21 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 10%;
+    padding-right: 10%;
     align-items: center;
     position: absolute;
-    background-color: transparent;
-}
-
-.logo {
-    background-color: transparent;
 }
 
 .menuNav {
     display: flex;
     list-style: none;
-    gap: 4em;
+    gap: 2em;
 }
 
 .menuNav > li {
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    font-weight: 600;
+    font-weight: 800;
 }
