@@ -1,0 +1,92 @@
+.basicInfoSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+    padding-bottom: 3rem;
+    background-image: url("../../assets/BGs/profileBGs/infosBasicas.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.basicInfo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap:2rem;
+}
+
+.infosContainer {
+    list-style: none;
+}
+
+.infosContainer > li > h1 {
+    font-size: 32px;
+}
+
+.infosContainer > li > p {
+    font-weight: 700;
+}
+
+.infosContainer > li > p > span {
+    font-weight: 400;
+}
+
+.editBasicBtn {
+    background-color: transparent;
+    border-radius: 8px;
+    width: 20%;
+    height: 5rem;
+    font-size: 24px;
+    font-weight: 600;
+    outline: none;
+    transition-duration: 0.2s;
+}
+
+.editBasicBtn:hover {
+    color: #1F7396;
+    border: 2px solid #1F7396;
+    scale: 1.05;
+}
+
+.detailsSection {
+    width: 100%;
+    height: 28rem;
+    display: flex;
+    padding: 0 9rem 0 9rem;
+}
+
+.sideBar {
+    width: 28%;
+    padding: 2rem 0 4rem 0;
+    border-right: 2px solid #CECECE;
+}
+
+.sideBar > ul {
+    list-style: none;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.sideBar > ul > li {
+    padding: 1rem 2.5rem 1rem 1rem;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+}
+
+.sideBar > ul > li:hover, .selected {
+    background-color: #CECECE;
+}
+
+.detailsInfos {
+    width: 72%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -2,8 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 7rem;
+    padding-right: 7rem;
     align-items: center;
     position: absolute;
 }
@@ -19,4 +19,16 @@
     align-items: center;
     gap: 0.3rem;
     font-weight: 800;
+    cursor: pointer;
+}
+
+.menuNav > li:hover {
+    color: #1F7396;
+}
+
+.menuNav > li > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: inherit;
 }
