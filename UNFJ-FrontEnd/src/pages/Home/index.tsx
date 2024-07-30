@@ -8,6 +8,8 @@ export const Home = () => {
 
     const navigate = useNavigate();
 
+    //FAZER ESSES BOTÕES SEREM REDIRECIONADOS PARA O PERFIL DE QUEM ESTÀ LOGADO PEGANDO O ID DELE
+
     return (
         <>
             <section className={styles.firstSection}>
@@ -29,7 +31,7 @@ export const Home = () => {
                         <h1>Gerenciar Turmas</h1>
                         <p>Conferir, registrar ou alterar turmas.</p>
                     </div>
-                    <div style={{backgroundColor: "#1F7396"}} className={styles.secondSectionCard} onClick={() => navigate("/profile")}>
+                    <div style={{backgroundColor: "#1F7396"}} className={styles.secondSectionCard} onClick={() => navigate("/profile/1")}>
                         <CgProfile size={100} />
                         <h1>Visualizar Perfil</h1>
                         <p>Gerir informações relacionadas ao seu perfil.</p>

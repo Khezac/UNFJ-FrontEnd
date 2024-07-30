@@ -1,0 +1,22 @@
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    height: 20%;
+}
+
+.inputLabel {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.input {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #CECECE;
+    padding-left: 1rem;
+    overflow: hidden;
+}
