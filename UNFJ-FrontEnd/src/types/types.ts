@@ -29,6 +29,7 @@ export type AddressFormTypes = {
     cep: string,
     setNumero: (value: string) => void
     numero: string,
+    isInfoLoading: boolean,
 }
 
 export type updateAddressType = {
@@ -36,4 +37,8 @@ export type updateAddressType = {
     cep: string,
     numero: string,
     complemento: string
+}
+
+export type LoadingProps = {
+    color: string,
 }

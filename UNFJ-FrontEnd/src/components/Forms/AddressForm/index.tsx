@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { AddressInput } from '../AddressInput'
 import styles from './styles.module.css'
 import { AddressFormTypes } from '../../../types/types'
+import { SpinnerLoading } from '../../SpinnerLoading'
 
 export const AddressForm = (props:AddressFormTypes) => {
     const [isDisabled, setIsDisabled] = useState<boolean>(true);
@@ -27,8 +28,9 @@ export const AddressForm = (props:AddressFormTypes) => {
     <div className={styles.detailsInfos}>
         <div className={styles.addressHeader}>
             <h1 className={styles.addressTitle}>Meu endereço</h1>
-            <button className={styles.editAddressBtn} onClick={handleUpdateAddress}>Editar</button>
+            <button className={styles.editAddressBtn} disabled={props.isInfoLoading} onClick={handleUpdateAddress}>{props.isInfoLoading ? <SpinnerLoading color='#E8E9F3'/> : "Editar Perfil"}</button>
         </div>
+        
         <form className={styles.addressForm}>
             <AddressInput name='CEP' label="CEP:" isDisabled={isDisabled} value={props.user ? props.cep as string : "Não encontrado"} setValue={props.setCep} />
             <AddressInput name='NUMERO' label="NUMERO:" isDisabled={isDisabled} value={props.user ? props.numero as string : "Não encontrado"} setValue={props.setNumero} />
