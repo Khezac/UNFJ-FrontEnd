@@ -13,6 +13,7 @@ export const Profile = () => {
     const [user, setUser] = useState<User>();
     const [cep, setCep] = useState<string>();
     const [numero, setNumero] = useState<string>();
+    const [exibir, setExibir] = useState<string>("Endereco");
 
     const { id } = useParams();
 
@@ -27,10 +28,10 @@ export const Profile = () => {
         }
     }
 
-    const updateAddress = async (newAddress:updateAddressType) => {
+    const updateAddress = async (newAddress: updateAddressType) => {
         try {
             const { data } = await putAddress(newAddress);
-            setUser((prev):User => ({...prev, endereco: data} as User))
+            setUser((prev): User => ({ ...prev, endereco: data } as User))
         } catch (err) {
             console.log(err)
         }
@@ -39,6 +40,10 @@ export const Profile = () => {
     useEffect(() => {
         getInfos(id as string)
     }, [])
+
+    const handleChangeExibir = (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
+        setExibir(e.currentTarget.id);
+    };
 
     return (
         <>
@@ -66,20 +71,28 @@ export const Profile = () => {
             <section className={styles.detailsSection}>
                 <nav className={styles.sideBar}>
                     <ul>
-                        <li>Endereço</li>
-                        <li>Contatos</li>
-                        <li>Notas</li>
-                        <li>Turmas</li>
+                        <li id='Endereco' onClick={(e) => handleChangeExibir(e)}>Endereço</li>
+                        <li id='Contatos' onClick={(e) => handleChangeExibir(e)}>Contatos</li>
+                        <li id='Notas' onClick={(e) => handleChangeExibir(e)}>Notas</li>
+                        <li id='Turmas' onClick={(e) => handleChangeExibir(e)}>Turmas</li>
                     </ul>
                 </nav>
-                <AddressForm 
-                updateAddress={updateAddress}
-                user={user as User} 
-                setCep={setCep} 
-                setNumero={setNumero} 
-                cep={cep as string} 
-                numero={numero as string}
-                />
+                {exibir && exibir == "Endereco" ?
+                    <AddressForm
+                        updateAddress={updateAddress}
+                        user={user as User}
+                        setCep={setCep}
+                        setNumero={setNumero}
+                        cep={cep as string}
+                        numero={numero as string}
+                    />
+                    : exibir == "Contatos" ?
+                    <h1>Contatos</h1>
+                    : exibir == "Notas" ?
+                    <h1>Notas</h1>
+                    : exibir == "Turmas" &&
+                    <h1>Turmas</h1>
+                }
             </section>
         </>
     )
