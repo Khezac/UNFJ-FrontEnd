@@ -1,0 +1,46 @@
+.detailsInfos {
+    width: 72%;
+    height: 32rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.addressHeader {
+    display: flex;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #CECECE;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.addressTitle {
+    font-size: 32px;
+}
+
+.editAddressBtn {
+    font-size: 18px;
+    width: 20%;
+    background-color: #1F7396;
+    border: none;
+    color: #E8E9F3;
+    border-radius: 8px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.editAddressBtn:hover {
+    scale: 1.05;
+    background-color: #272635;
+}
+
+.addressForm {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 80%;
+    justify-content: space-between;
+}

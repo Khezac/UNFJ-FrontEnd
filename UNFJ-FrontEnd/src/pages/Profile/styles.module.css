@@ -53,7 +53,7 @@
 
 .detailsSection {
     width: 100%;
-    height: 28rem;
+    min-height: 28rem;
     display: flex;
     padding: 0 9rem 0 9rem;
 }
@@ -86,7 +86,7 @@
 
 .detailsInfos {
     width: 72%;
-    height: 100%;
+    height: 32rem;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -127,6 +127,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 90%;
+    min-height: 80%;
     justify-content: space-between;
 }

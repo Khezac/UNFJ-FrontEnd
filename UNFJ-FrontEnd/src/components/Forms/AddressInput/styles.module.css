@@ -11,12 +11,22 @@
     font-weight: 600;
 }
 
-.input {
+.disabledInput {
     width: 100%;
     height: 90%;
     border-radius: 8px;
     background-color: transparent;
     border: 2px solid #CECECE;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+
+.enabledInput {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid black;
     padding-left: 1rem;
     overflow: hidden;
 }
